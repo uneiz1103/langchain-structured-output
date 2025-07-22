@@ -17,6 +17,8 @@ class Review(TypedDict):
 
     cons: Annotated[Optional[list[str]], "write down all the pros inside a list"]
 
+    name: Annotated[Optional[str], "write the name of the reviewer"]
+
     
 
 structured_model = model.with_structured_output(Review)
@@ -35,7 +37,8 @@ Stunning 200MP camera with incredible zoom capabilities
 Long battery life with fast charging
 S-Pen support is unique and useful
                                  
-Review by Nitish Singh""")
+Review by Uneiz Shaikh
+                                 """)
 
 print(result)
 
