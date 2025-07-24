@@ -2,9 +2,9 @@ from pydantic import BaseModel
 
 class Student(BaseModel):
     
-    name: str
+    name: str = 'uneiz'
 
-new_student = {'name': 'uneiz'}
+new_student = {}
 
 student = Student(**new_student)
 
