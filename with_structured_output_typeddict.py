@@ -41,5 +41,3 @@ Review by Uneiz Shaikh
                                  """)
 
 print(result)
-
-
